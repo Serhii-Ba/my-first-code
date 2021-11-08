@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для заполнения</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <h3>Заполните поля формы*</h3> <! i - наклонный>
+  <div>
+   <form action="index.php" method="post">
+       <label>Name:</label> <input type="text" name="Name" /> <! b - жирный>
+       <br /><br />
+       <label>Surname:</label> <input type="text" name="Surname" />
+       <br /><br />
+       <label>Age:</label> <input type="number" name="Age" />
+       <br /><br />
+       <label>Gender:</label>
+        <input type="radio" name="Gender" value="Male" /> <i>Male</i>
+        <input type="radio" name="Gender" value="Female" /> <i>Female</i>
+        <br /><br />
+        <button type="submit" class="b1">
+            <img src="xxx.png" alt="" style="vertical-align:middle">
+            Создать новую запись
+        </button> <! кнопка оправки>
+        <button type="reset" class="b1">Сброс</button>
+        <br /><br />
+   </form>
+ </div>
+ <h4><i>* будет создана новая запись и добавлена в конец списка.</i></h4>
+ <br />
+</body>
+</html>
