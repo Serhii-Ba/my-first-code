@@ -17,3 +17,4 @@ Lady;Gaga;35;Female
 Tinto;Brass;88;Male
 Taras;Bulba;52;Male
 Iron;Maiden;45;Male
+Ivan;Mazepa;382;Male

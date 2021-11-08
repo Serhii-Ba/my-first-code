@@ -11,7 +11,7 @@ $s = $_POST['Surname'];
 $a = $_POST['Age'];
 $g = $_POST['Gender'];
 
-if (strlen($n)>0&&strlen($s)>0&&strlen($a)>0&&strlen($g)>0) { //если будетут пустые ячейки - исключить
+if (strlen($n) > 0 && strlen($s) > 0 && strlen($a) > 0 && strlen($g)>0) { //если будетут пустые ячейки - исключить
     //$users[] = $n . ';' . $s . ';' . $a . ';' . $g;
     $users[] = sprintf("%s;%s;%s;%s", $n, $s, $a, $g); //этот вариант написания лучше, чем в стоке 15
     file_put_contents('users.txt', implode("\n", $users));
