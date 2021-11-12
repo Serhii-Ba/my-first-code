@@ -1,0 +1,10 @@
+Name;Surname;Age;Gender
+Alex4;Macallan;18;Male
+Mike4;Macallan;12;Male
+Oleg4;Macallan;11;Male
+Paul4;Macallan;20;Male
+Smith4;Macallan;38;Male
+Polly4;Hennessy;52;Female
+Olha4;Hennessy;27;Female
+Billy4;Hennessy;44;Male
+Mary4;Hennessy;92;Female

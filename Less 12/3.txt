@@ -1,0 +1,11 @@
+Name;Surname;Age;Gender
+Alex;Her;18;Male
+Mike;Her;12;Male
+Oleg;Her;11;Male
+Paul;Her;20;Male
+Smith;Her;38;Male
+Polly;Frau;52;Female
+Olha;Frau;27;Female
+Billy;Her;44;Male
+Mary;Frau;92;Female
+Ivo;Bobul;54;Male

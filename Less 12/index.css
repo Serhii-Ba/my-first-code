@@ -1,0 +1,33 @@
+label {
+    color: black;
+    width: 75px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.d1 {
+    width: 450px;
+    height: 250px;
+    border: 1px solid blueviolet;
+    padding: 10px;
+}
+
+.d2 {
+    width: 450px;
+    height: 130px;
+    border: 1px solid blueviolet;
+    padding: 10px;
+}
+p {
+    font-style: italic;
+    font-weight: bold;
+}
+span {
+    font-style: italic;
+    font-weight: bold;
+}
+.b1 {
+    background: blueviolet;
+    color: white;
+    height: 25px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для заполнения</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="d1">
+    <span>
+        Вариант 1: заполните поля формы*
+    </span>
+    <form action="index.php" method="post">
+        <br />
+        <label>Name:</label> <input type="text" name="Name" /> <! b - жирный>
+       <br /><br />
+       <label>Surname:</label> <input type="text" name="Surname" />
+       <br /><br />
+       <label>Age:</label> <input type="number" name="Age" />
+       <br /><br />
+       <label>Gender:</label>
+        <input type="radio" name="Gender" value="Male" /> <i>Male</i>
+        <input type="radio" name="Gender" value="Female" /> <i>Female</i>
+        <br /><br />
+        <button type="submit" class="b1">
+            <img src="xxx.png" alt="" style="vertical-align:middle">
+            Создать новую запись
+        </button> <! кнопка оправки>
+       <button type="reset" class="b1">Сброс</button>
+       <p style="font-size: small">* будет создана новая запись и добавлена в конец списка</p>
+    </form>
+  </div>
+  <p>или же</p>
+  <div class="d2">
+    <span>
+        Вариант 2: выберите и вложите текстовый файл co списком пользователей
+    </span>
+    <form method="post" action="index.php" enctype="multipart/form-data"><br />
+        <label>
+            <input type="file" name="attach"/>
+        </label>
+        <br /><br />
+        <button type="submit" class="b1">
+            <img src="yyy.png" alt="" style="vertical-align:middle">
+            Отправить файл
+        </button> <! кнопка оправки>
+        <button type="reset" class="b1">Сброс</button>
+    </form>
+  </div>
+</body>
+</html>
