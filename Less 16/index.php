@@ -35,12 +35,11 @@ class Builder {
     protected static $data = [];
 
     public static function addNameAge ($z, $x) {
-        $c = new Builder();
-        $c->name = $z;
-        $c->age = $x;
+        $c = new User();
+        $c->setName($z);
+        $c->setAge($x);
 
         Builder::$data[] = $c;
-
         return $c;
     }
 
