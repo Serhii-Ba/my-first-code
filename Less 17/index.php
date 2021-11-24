@@ -11,13 +11,20 @@ class Animals
 
     public function __construct($kind, $size, $habitat, $lifestyle, $movement)
     {
-        echo 'конструктор сработал в момент создания объекта $animal# ' . "<br/>\n";
+        echo 'construct сработал в момент создания объекта $animal# ' . "<br/>\n";
 
         $this->kind = $kind;
         $this->size = $size;
         $this->habitat = $habitat;
         $this->lifestyle = $lifestyle;
         $this->movement = $movement;
+    }
+    public function __destruct() {
+        echo 'если ты это видишь, то сработал destruct' . "<br/>\n";
+    }
+
+    public function __toString() {
+        return $this->kind;
     }
 
     public function getKind () {
@@ -56,4 +63,6 @@ foreach ($Animal as $v) {
         . $v->getHabitat() . ', образ жизни - ' . $v->getLifestyle() . ', способ передвижения - '
         . $v->getMovement() . "\n";
 }
+
+echo '<u><strong>вывод объектов через toString:</strong></u>' . "<br/>\n". $animal1 . "<br/>\n" . $animal2 . "<br/>\n". $animal3 . "<br/>\n";
 
