@@ -16,13 +16,9 @@
 
 interface FigureInt {
 
-    public function getSquare ();
-
-    public function getPerimeter();
-
     public function __toString ();
 }
-abstract class Figure {
+abstract class Figure implements FigureInt {
 
     public $length; //длина
     public $width; //ширина
@@ -44,8 +40,9 @@ abstract class Figure {
 
     abstract public function getPerimeter();
 
-    abstract public function __toString();
-
+    public function __toString() {
+        return 'периметр - ' . $this->getSquare() . ', площадь - ' . $this->getPerimeter() . ', отношение - ' . $this->getCorrelation();
+    }
 }
 
 class Quadrate extends Figure {
@@ -59,11 +56,6 @@ class Quadrate extends Figure {
 
         return $this->length*4;
     }
-
-    public function __toString() {
-
-       return 'периметр - ' . $this->getSquare() . ', площадь - ' . $this->getPerimeter() . ', отношение - ' . $this->getCorrelation();
-    }
 }
 
 class Rectangle extends Figure {
@@ -76,10 +68,6 @@ class Rectangle extends Figure {
 
         return ($this->length+$this->width)*2;
     }
-    public function __toString() {
-
-        return 'периметр - ' . $this->getSquare() . ', площадь - ' . $this->getPerimeter() . ', отношение - ' . $this->getCorrelation();
-    }
 }
 
 class Triangle extends Figure {
@@ -91,10 +79,6 @@ class Triangle extends Figure {
     public function getPerimeter () {
 
         return $this->length+$this->width+$this->height;
-    }
-    public function __toString() {
-
-        return 'периметр - ' . $this->getSquare() . ', площадь - ' . $this->getPerimeter() . ', отношение - ' . $this->getCorrelation();
     }
 }
 
