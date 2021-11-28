@@ -16,3 +16,60 @@
 их в разных файлах, и реализовать автозагрузку классов, для этого тебе
 подойдет функция — spl_autoload_register.*/
 
+class User {
+
+    public $name;
+
+    public $age;
+
+    public function __construct($name, $age = null) {
+        $this->name = $name;
+        $this->age = $age = rand(1,100);
+    }
+
+    public function getName () {
+        return $this->name;
+    }
+
+    public function getAge () {
+        return $this->age;
+    }
+}
+
+$User1 = new User('Serhii');
+$User2 = new User('Petro');
+$User3 = new User('Alex');
+$User4 = new User('Olha');
+$User5 = new User ('Maria');
+
+$Users = [$User1, $User2, $User3, $User4, $User5];
+
+echo '<pre>';
+var_dump($Users);
+
+foreach ($Users as $v) {
+    echo 'name: ' . $v->getName() . ', age: ' . $v ->getAge(). "\n";
+}
+
+
+
+class Control {
+
+    static function filter() {
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
