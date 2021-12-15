@@ -1,0 +1,23 @@
+label {
+    color: black;
+    width: 75px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+div {
+    width: 350px;
+    height: 180px;
+    border: 1px solid blueviolet;
+    padding: 10px;
+}
+
+h3 {
+    font-style: italic;
+}
+
+.b1 {
+    background: blueviolet;
+    color: white;
+    height: 25px;
+}
