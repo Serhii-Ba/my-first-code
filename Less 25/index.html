@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Знакомство с Javascript</title>
+     <style>
+       td:hover {
+         background-color: aquamarine;
+       }
+     </style>
+ </head>
+ <body>
+   <div>
+       <p><form name = "form">
+       <input id="enter" type="text" name="textview" readonly>
+    </form></p>
+    <table>
+      <tr>
+        <td onclick="clearEnterValue()"><button type="reset" style="color: red">С</button></td>
+        <td onclick="enterAction('+')"><input type="button" name="action" value="+"></td>
+        <td onclick="enterAction('-')"><input type="button" name="action" value="-"></td>
+        <td onclick="enterAction('*')"><input type="button" name="action" value="*"></td>
+        <td onclick="enterBack()"><input type="button" name="back" value="&larr;"></td>
+      </tr>
+      <tr>
+        <td onclick="enterNumber('1')"><input type="button" value="1"></td>
+        <td onclick="enterNumber('2')"><input type="button" value="2"></td>
+        <td onclick="enterNumber('3')"><input type="button" value="3"></td>
+        <td onclick="enterAction('/')"><input type="button" name="action" value="/"></td>
+      </tr>
+      <tr>
+        <td onclick="enterNumber('4')"><input type="button" value="4"></td>
+        <td onclick="enterNumber('5')"><input type="button" value="5"></td>
+        <td onclick="enterNumber('6')"><input type="button" value="6"></td>
+        <td id="out"><input type="button" name="result" value="="></td>
+      </tr>
+      <tr>
+        <td onclick="enterNumber('7')"><input type="button" value="7"></td>
+        <td onclick="enterNumber('8')"><input type="button" value="8"></td>
+        <td onclick="enterNumber('9')"><input type="button" value="9"></td>
+        <td onclick="enterNumber('0')"><input type="button" value="0"></td>
+      </tr>
+    </table>
+   </div>
+   <script src="index.js"></script>
+ </body>
+</html>
