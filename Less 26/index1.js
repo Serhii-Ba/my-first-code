@@ -42,46 +42,47 @@ var clWhalf = clW / 2; // половина ширины
 var elem = document.querySelector('#sq1');
 
 
- window.addEventListener('click', function (event) {
+window.addEventListener('mousemove', function (event) {
 
-     console.log(event.clientX); // инфо в консоль
-     console.log(event.clientY); // инфо в консоль
+    console.log(event.clientX); // инфо в консоль
+    console.log(event.clientY); // инфо в консоль
 
-     elem.style.top = event.clientY - (sq1.offsetHeight / 2);
-     elem.style.left = event.clientX - (sq1.offsetWidth / 2);
+    elem.style.top = event.clientY - (sq1.offsetHeight / 2);
+    elem.style.left = event.clientX - (sq1.offsetWidth / 2);
 
-     if (event.clientY < clHhalf && event.clientX > clWhalf)
-     {
-         window.addEventListener('click', function () {
-             elem.style.background = 'red';
-             elem.style.top = event.clientY - (sq1.offsetHeight / 2);
-             elem.style.left = event.clientX - (sq1.offsetWidth / 2);
-         })
-     } else {
-         window.addEventListener('click', function () {
-         elem.style.background = 'black';
-         elem.style.top = event.clientY - (sq1.offsetHeight / 2);
-         elem.style.left = event.clientX - (sq1.offsetWidth / 2);
-     })}
+    if (event.clientY < clHhalf && event.clientX > clWhalf)
+    {
+        // window.addEventListener('click', function () {
+            elem.style.background = 'red';
+            elem.style.top = event.clientY - (sq1.offsetHeight / 2);
+            elem.style.left = event.clientX - (sq1.offsetWidth / 2);
+        //})
+    } else {
+        //window.addEventListener('click', function () {
+        elem.style.background = 'black';
+        elem.style.top = event.clientY - (sq1.offsetHeight / 2);
+        elem.style.left = event.clientX - (sq1.offsetWidth / 2);
+        //})
+    }
 
-     if (event.clientY > clHhalf && event.clientX > clWhalf)
-     {
-         window.addEventListener('click', function () {
-             elem.style.background = 'blue';
-             elem.style.top = event.clientY - (sq1.offsetHeight / 2);
-             elem.style.left = event.clientX - (sq1.offsetWidth / 2);
-         })
-     }
+    if (event.clientY > clHhalf && event.clientX > clWhalf)
+    {
+        //window.addEventListener('click', function () {
+            elem.style.background = 'blue';
+            elem.style.top = event.clientY - (sq1.offsetHeight / 2);
+            elem.style.left = event.clientX - (sq1.offsetWidth / 2);
+        //})
+    }
 
-     if (event.clientY > clHhalf && event.clientX < clWhalf)
-     {
-         window.addEventListener('click', function () {
-             elem.style.background = 'yellow';
-             elem.style.top = event.clientY - (sq1.offsetHeight / 2);
-             elem.style.left = event.clientX - (sq1.offsetWidth / 2);
-         })
-     }
- });
+    if (event.clientY > clHhalf && event.clientX < clWhalf)
+    {
+        //window.addEventListener('click', function () {
+            elem.style.background = 'yellow';
+            elem.style.top = event.clientY - (sq1.offsetHeight / 2);
+            elem.style.left = event.clientX - (sq1.offsetWidth / 2);
+        //})
+    }
+});
 
 
 
