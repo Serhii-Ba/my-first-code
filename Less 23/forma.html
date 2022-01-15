@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для заполнения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div>
+            <a><strong>Заполните все поля формы.</strong></a>
+            <form action="main.php" method="post">
+                <p>
+                    <a><small>Данные пользователя:</small></a>
+                </p>
+                <p>
+                    <a><strong>Name:</strong></a>
+                    <input type="text" maxlength="12" name="name" placeholder="name">
+                </p>
+                <p>
+                    <a><strong>Age:</strong></a>
+                    <input type="number" min = "1" max="110" name="age" placeholder="age">
+                </p>
+                <p>
+                    <a><strong>Sex:</strong></a>
+                       <input type="text" name="sex" list="sex" placeholder="sex">
+                         <datalist id="sex">
+                           <option value="male">
+                           <option value="female">
+                         </datalist>
+                <p>
+                    <a><small>Паспортные данные:</small></a>
+                </p>
+                <p>
+                    <a><strong>Number:</strong></a>
+                    <input type="number" name="number" placeholder="enter number">
+                </p>
+                <p>
+                    <a><strong>Series:</strong></a>
+                    <input type="text" maxlength="2" name="series" placeholder="enter series">
+                </p>
+                <p>
+                    <a><strong>Data:</strong></a>
+                    <input type="date" name="data" placeholder="enter data">
+                </p>
+                <p>
+                    <input id="submit" type="submit" style="color: blueviolet" value="Отправить данные">
+                    <button type="reset" style="color: blueviolet">Сброс</button>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

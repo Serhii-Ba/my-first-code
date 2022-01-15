@@ -1,0 +1,17 @@
+
+div {
+    width: 320px;
+    height: 350px;
+    border: 2px solid blueviolet;
+    padding: 20px;
+    margin: 20px;
+}
+a {
+    font-style: italic;
+}
+button:hover {
+    background-color: orangered;
+}
+#submit:hover {
+    background-color: aquamarine;
+}
