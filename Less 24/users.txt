@@ -19,8 +19,8 @@ Taras;Bulba;52;Male
 Iron;Maiden;45;Male
 Ivan;Mazepa;382;Male
 Gans;Andersen;150;Male
-Ded;Moroz;950000000000000000000;Male
+Ded;Moroz;950000000000;Male
 Panda;Kongfu;25;Male
-q;q;1;Female
-ws;ww;343;Female
-asA;AsAS;23323;Female
+Ivanka;Franko;18;Female
+Zahar;Berkut;29;Male
+Alex;Fergson;76;Male

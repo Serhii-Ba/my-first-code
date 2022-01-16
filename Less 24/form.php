@@ -1,5 +1,25 @@
 <?php
 
+$users = [
+    ['log' => 'admin',   'pas' => 123123],
+    ['log' => 'qwerty',  'pas' => 777777],
+    ['log' => 'qwerty',  'pas' => 111111],
+    ['log' => 'amoguus',   'pas' => 139005],
+];
+
+$logout = $_POST['login'];
+$passwout = $_POST['password'];
+
+session_start();
+
+foreach ($users as $v) {
+    if ($logout == $v['log'] && $passwout == $v['pas']) {
+        $_SESSION ['us'] = true;
+
+    }
+}
+if ($_SESSION ['us'] == true) {
+
 echo '<a href="myform.html">Форма для заполнения (нажмите для продолжения)</a>';
 echo '<br/><br/>';
 
@@ -8,9 +28,10 @@ $users = explode("\r\n", $file0); // "\r" убирает лишние артеф
 
 $n = $_POST['Name'];
 $s = $_POST['Surname'];
+$a = $_POST['Age'];
 $g = $_POST['Gender'];
 
-if (strlen($n) > 0 && strlen($s) > 0 && strlen($a) > 0 && strlen($g)>0) { //если будетут пустые ячейки - исключить
+if (strlen($n) > 0 && strlen($s) > 0 && strlen($a) > 0 && strlen($g)>0) { //если будут пустые ячейки - исключить
         $users[] = sprintf("%s;%s;%s;%s", $n, $s, $a, $g);
         file_put_contents('users.txt', implode("\n", $users));
 }
@@ -41,3 +62,7 @@ echo '<title>Массив юзеров</title>';
             echo '</tr>';
          }
      echo '</table>';
+} else {
+    echo "<a style='color: orangered'> логин или пароль не верный, повторите ввод.</a></br>";
+    echo '</br><a href="index.php">Необходимо пройти авторизацию (нажмите для продолжения)</a>';
+}

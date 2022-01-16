@@ -7,8 +7,6 @@ $users = [
     ['log' => 'amoguus',   'pas' => 139005],
 ];
 
-$filepass= file_get_contents('passwordform.html');
-
 $logout = $_POST['login'];
 $passwout = $_POST['password'];
 
@@ -23,6 +21,6 @@ foreach ($users as $v) {
 if ($_SESSION ['us'] == true) {
        include 'form.php';
 } else {
-      echo "<a style='color: orangered'> логин или пароль не верный, повторите ввод.</a>";
-      echo '</br>' . '<a href="index.php">Форма для заполнения (нажмите для продолжения)</a>';
+      echo "<a style='color: orangered'> логин или пароль не верный, повторите ввод.</a></br>";
+      echo '</br><a href="index.php">Необходимо пройти авторизацию (нажмите для продолжения)</a>';
 }
