@@ -29,17 +29,13 @@ $user3 = new \Less19\Myclass\User('Alex');
 $user4 = new \Less19\Myclass\User('Olha');
 $user5 = new \Less19\Myclass\User('Maria');
 
-$users = [(array)$user1, (array)$user2, (array)$user3, (array)$user4, (array)$user5];
-$users1 = [$user1, $user2, $user3, $user4, $user5];
+$users = [$user1, $user2, $user3, $user4, $user5];
 
-echo '<pre>';
-var_dump($users);
 
-foreach ($users1 as $v) {
+foreach ($users as $v) {
     echo 'name: ' . $v->getName() . ', age: ' . $v ->getAge(). "\n";
 }
 
 $users_adult = new \Less19\Myclass\Control();
-$users_adult->filter($users);
+var_dump($users_adult->filter($users));
 
-var_dump((array)$users_adult);
