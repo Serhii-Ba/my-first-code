@@ -5,27 +5,17 @@ label {
     font-weight: bold;
 }
 
-.d1 {
-    width: 450px;
-    height: 250px;
+div {
+    width: 350px;
+    height: 180px;
     border: 1px solid blueviolet;
     padding: 10px;
 }
 
-.d2 {
-    width: 450px;
-    height: 130px;
-    border: 1px solid blueviolet;
-    padding: 10px;
-}
-p {
+h3 {
     font-style: italic;
-    font-weight: bold;
 }
-span {
-    font-style: italic;
-    font-weight: bold;
-}
+
 .b1 {
     background: blueviolet;
     color: white;

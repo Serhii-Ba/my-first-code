@@ -18,4 +18,8 @@ Tinto;Brass;88;Male
 Taras;Bulba;52;Male
 Iron;Maiden;45;Male
 Ivan;Mazepa;382;Male
-Victoria;Beckham;47;Female
+Gans;Andersen;150;Male
+Ded;Moroz;950000000000;Male
+Panda;Kongfu;25;Male
+Ivanka;Franko;18;Female
+Fet;Frumos;100;Male
